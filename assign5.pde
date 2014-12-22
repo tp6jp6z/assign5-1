@@ -1,5 +1,3 @@
-
-<!-‐fork gh‐pages needs to commit once to trigger webpage‐->
 Bar bar;
 Ball ball;
 Brick [] brList;
