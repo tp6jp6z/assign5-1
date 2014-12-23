@@ -129,8 +129,12 @@ void brickHit(){
        (ball.y<= brBottom) && (ball.y>= brTop)){
       removeBrick(brList[i]);
       brickHitNum++;
-      ySpeed*= -1;
+      xSpeed*= -1;
       checkWinLose();
+      
+      if(xSpeed< 1 && xSpeed> -1){
+        ySpeed*= -1;
+      }
     }
 
     // Hit Left 
@@ -138,8 +142,12 @@ void brickHit(){
        (ball.y<= brBottom) && (ball.y>= brTop)){
       removeBrick(brList[i]);
       brickHitNum++;
-      ySpeed*= -1;
+      xSpeed*= -1;
       checkWinLose();
+      
+      if(xSpeed< 1 && xSpeed> -1){
+        ySpeed*= -1;
+      }
     }
     
     // Hit Bottom  
@@ -149,6 +157,7 @@ void brickHit(){
       brickHitNum++;
       ySpeed*= -1;
       checkWinLose();
+      
     }
     
     // Hit Top  
@@ -197,8 +206,7 @@ void checkWinLose(){
 //Reset---------------------
 void reset1(){
   xSpeed= random(-5,5);
-  ySpeed= -5;
-  
+  ySpeed= -6;
 }
 
 void reset2(){
@@ -282,5 +290,4 @@ void statusCtrl(){
   }
   
 }
-
 
