@@ -29,7 +29,7 @@ class Bar{
     x= mouseX;
     y= height- 6;
     
-    Length= 100;
+    Length= 120;
     Size= 10;
   }
 }
