@@ -262,7 +262,7 @@ void keyPressed() {
 }
 
 void mousePressed(){
-  if (mouseButton == LEFT) {
+  if (mouseButton == RIGHT) {
     if(status== GAME_RESET){
       status = GAME_PLAYING;
     }
